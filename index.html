@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/cs/style.css" type="text/css">
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="display-3 text-center">Crystal Collector</h1>
+        <p class="lead">Rules:</p>
+        <p class=>You will be given a random number at the start of the game.</p>
+        <p class=>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+        <p class=>You win the game by matching your total score to random number, you lose the game if your total goes above the random
+            number.</p>
+        <p class=>The value of each crystal is hidden from you until you click on it.</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>Your number to match:
+                    <span id="randomNumber"> 39</span>
+                </p>
+            </div>
+            <div class="col-md-6">
+                <p>Wins:
+                    <span id="Wins">0</span>
+                </p>
+                <p>Losses:
+                    <span id="Losses">0</span>
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <img src="assets/images/Crash_Twinsanity_Yellow_Gem.png" width="150" height="150" class="crystal img-thumbnail" id="yellow" alt="yellow crystal">
+                    <img src="assets/images/Crash_Nitro_Kart_Blue_Gem.png" width="150" height="150" class="crystal img-thumbnail" id="blue" alt="blue crystal">
+                    <img src="assets/images/Crash_Nitro_Kart_Green_Gem.png" width="150" height="150" class="crystal img-thumbnail" id="green" alt="green crystal">
+                    <img src="assets/images/Crash_Nitro_Kart_Red_Gem.png" width="150" height="150" class="crystal img-thumbnail" id="red" alt="red crystal">
+                </div>
+            </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <p>Your total score is:</p>
+                    <p><span id="totalScore">0</span></p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script   src="https://code.jquery.com/jquery-3.2.1.js"   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="   crossorigin="anonymous"></script>    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <script src="assets/javascript/game.js" type="text/javascript"></script>
+</body>
+
+</html>
