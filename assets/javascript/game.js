@@ -9,8 +9,8 @@
     var redNum = Math.floor(Math.random() * 11 + 1);
     var greenNum = Math.floor(Math.random() * 11 + 1);
     var yellNum = Math.floor(Math.random() * 11 + 1);
-    $('#Wins').text(wins);
-    $('#Losses').text(losses);
+    
+    
 
     function resetGame() {
         var rdm = Math.floor(Math.random() * 101 + 19);
@@ -26,13 +26,15 @@
     }
     function youLose() {
         alert('Sorry, You have lost the game.  Please try again.');
-        losses--;
+        losses++;
+        $('#Losses').text(losses);
         resetGame();
     }
 
     function youWin() {
         alert("You have won the game.  You still don't get a prize though.");
         wins++;
+        $('#Wins').text(wins);
         resetGame();
     }
 
@@ -42,8 +44,10 @@
         console.log(playerTotal);            
         if (playerTotal == rdm) {
             youWin();
+           
         } else if (playerTotal > rdm) {
             youLose();
+            
         }
     });
     $("#blue").on("click", function(){
@@ -54,6 +58,7 @@
             youWin();
         } else if (playerTotal > rdm) {
             youLose();
+           
         }
     });
     $("#red").on("click", function(){
@@ -62,8 +67,10 @@
         console.log(playerTotal);
         if (playerTotal == rdm) {
             youWin();
+            
         } else if (playerTotal > rdm) {
             youLose();
+           
         }
     });
     $("#green").on("click", function(){
@@ -72,7 +79,9 @@
         console.log(playerTotal);
         if (playerTotal == rdm) {
             youWin();
+           
         } else if (playerTotal > rdm) {
             youLose();
+           
         }
     });
